@@ -18,7 +18,7 @@ jobs:
       run: |
         gem install jekyll bundler
         bundle install
-        sudo apt-get install -y sftp
+        sudo apt-get install -y lftp
         
     - name: Build Site with Jekyll
       run: JEKYLL_ENV=production bundle exec jekyll build
